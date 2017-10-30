@@ -2,6 +2,7 @@ angular.module('emprestiopatinhas').controller('cadastroController', cadastroCon
 
 function cadastroController($scope,$state,$http) {
     $scope.cadastro = true;
+    console.log($scope.cadastro);
     $scope.dados = {};
     $scope.valida = {
         nome: false,
