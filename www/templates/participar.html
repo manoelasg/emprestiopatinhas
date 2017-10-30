@@ -1,21 +1,28 @@
 <section>
-    <h1>Participar</h1>
-</section>
-<section>
-  <div class="container px-0">
-      <div class="quem_esta_aqui">
-          <div class="jumbotron col-md-5 col-12 py-4 jumqea1">
-              <h3>Faça Parte</h3>
-              <form action="/faca_parte" method="POST">
-                  <input type="text" name="nomeUsuario" placeholder="Nome">
-                  <br>
-                  <input type="text" name="emailUsuario" placeholder="E-mail">
-                  <br>
-                  <input type="radio" name="tipoUsuario" value="credor">Posso ajudar!
-                  <br>
-                  <input type="radio" name="tipoUsuario" value="tomador">Preciso de ajuda =P
-                  <br>
-                  <button>Enviar</button>
+  <div>
+      <div class="participar">
+          <div class="jumbotron mainjumbo2 px-5">
+              <h3>Participe!</h3>
+              <form>
+                  <div class="form1">
+                      <div class="parte1form1">
+                          <div>
+                              Nome: <input class="campo" type="text" name="nomeUsuario" placeholder="Nome">
+                          </div>
+                          <div>
+                              E-mail: <input class="campo" type="text" name="emailUsuario" placeholder="E-mail">
+                          </div>
+                      </div>
+                      <div class="parte2form1">
+                          <div>
+                              <input type="radio" name="tipoUsuario" value="credor">Posso ajudar!
+                          </div>
+                          <div>
+                              <input type="radio" name="tipoUsuario" value="tomador">Preciso de ajuda =P
+                          </div>
+                      </div>
+                  </div>
+                  <button class="enviarForm1">Enviar</button>
               </form>
           </div>
       </div>

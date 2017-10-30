@@ -354,17 +354,17 @@ angular.module('emprestiopatinhas', ['ui.router']);
 
 angular.module('emprestiopatinhas').config(rotas);
 
-function rotas($stateProvider, $urlRouterProvider) {
-    $stateProvider.state('cadastro', {
-        templateUrl: 'templates/cadastro.html',
-        url: '/cadastro',
-        controller: 'cadastroController'
-    });
-
+function rotas($stateProvider, $urlRouterProvider) {    
     $stateProvider.state('main', {
         templateUrl: 'templates/main.html',
         url: '/main',
         controller: 'mainController'
+    });
+
+    $stateProvider.state('cadastro', {
+        templateUrl: 'templates/cadastro.html',
+        url: '/cadastro',
+        controller: 'cadastroController'
     });
 
     $stateProvider.state('login', {
@@ -385,7 +385,7 @@ function rotas($stateProvider, $urlRouterProvider) {
         controller: 'participarController'
     });
 
-    $urlRouterProvider.otherwise('/cadastro');
+    $urlRouterProvider.otherwise('/main');
 }
 
 angular.module('emprestiopatinhas').controller('cadastroController', cadastroController);
