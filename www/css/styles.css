@@ -222,4 +222,9 @@
         color: #00935F;
         text-decoration: none;
     }
+    .galera{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
