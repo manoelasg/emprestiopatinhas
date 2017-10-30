@@ -481,7 +481,7 @@ function loginController($scope,$state,$http) {
             $http.post('http://localhost:3000/usuarios/login', $scope.dados).then(function(respostaSucesso){
                 console.log(`respostaSucesso: ${angular.toJson(respostaSucesso, 1)}`);
                 console.log(`respostaSucessoHeaders: ${angular.toJson(respostaSucesso.headers.Authorization, 1)}`);
-                // $state.go("main");
+                $state.go("main");
             }, function(respostaErro){
                 console.log(respostaErro);
                 if (respostaErro.status == 403) {
