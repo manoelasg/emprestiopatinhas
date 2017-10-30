@@ -7,7 +7,7 @@
     <div class="formcadastro mx-auto">
         <form>
             <div class="form-group">
-                <label for="inputNome">Nome</label>
+                <label for="inputNome">Nome {{cadastro}}</label>
                 <input ng-model="dados.nome" ng-class="{obrigatorio:valida.nome}" type="text" class="form-control" id="inputNome" aria-describedby="nomeHelp" placeholder="Digite seu nome...">
                 <small id="nomeHelp" class="form-text text-danger obrigatorio" ng-show="valida.nome">Obrigatório</small>
             </div>

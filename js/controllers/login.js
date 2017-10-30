@@ -21,8 +21,9 @@ function loginController($scope,$state,$http) {
 
         if ($scope.valida.email == false && $scope.valida.senha == false) {
             $http.post('http://localhost:3000/usuarios/login', $scope.dados).then(function(respostaSucesso){
-                console.log(`respostaSucesso: ${angular.toJson(respostaSucesso, pretty)}`);
-                $state.go("main");
+                console.log(`respostaSucesso: ${angular.toJson(respostaSucesso, 1)}`);
+                console.log(`respostaSucessoHeaders: ${angular.toJson(respostaSucesso.headers.Authorization, 1)}`);
+                // $state.go("main");
             }, function(respostaErro){
                 console.log(respostaErro);
                 if (respostaErro.status == 403) {
@@ -32,9 +33,9 @@ function loginController($scope,$state,$http) {
         };
 
 
-        console.log('entrar()');
-        console.log($scope.dados);
-        console.log($scope.valida);
+        // console.log('entrar()');
+        // console.log($scope.dados);
+        // console.log($scope.valida);
 
     };
 };
